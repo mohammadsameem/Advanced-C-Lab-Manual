@@ -127,7 +127,26 @@ To write a C program to traverse a doubly linked list.
 
 ## Program
 ```c
-c
+#include <stdio.h>
+
+struct Node {
+    int data;
+    struct Node *prev, *next;
+};
+
+int main() {
+    struct Node n1 = {10, NULL, NULL};
+    struct Node n2 = {20, &n1, NULL};
+    struct Node n3 = {30, &n2, NULL};
+    n1.next = &n2;
+    n2.next = &n3;
+
+    struct Node *temp = &n1;
+    while (temp != NULL) {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    }
+}
 ```
 
 ## Output
