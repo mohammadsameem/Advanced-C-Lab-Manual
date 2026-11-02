@@ -12,15 +12,28 @@ Algorithm:
 7.	Return 0
  
 Program:
-
-//type your code here
-
-
-
+~~~
+#include <stdio.h>
+struct numbers {
+    int a, b;
+};
+struct numbers add(struct numbers n) {
+    n.a = n.a + n.b;
+    return n;
+}
+int main() {
+    struct numbers n, r;\
+    scanf("%d%d", &n.a, &n.b);
+    r = add(n);
+    printf("Sum = %d", r.a);
+}
+~~~
 
 Output:
 
-//paste your output screenshots here
+<img width="1855" height="530" alt="image" src="https://github.com/user-attachments/assets/e94f0e9a-090b-481a-baa2-e6aa26f93ef4" />
+
+<img width="471" height="258" alt="image" src="https://github.com/user-attachments/assets/e4b163fb-ee79-42c1-8a15-f6bf7fce3979" />
 
 
 
